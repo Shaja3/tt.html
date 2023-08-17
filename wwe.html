@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>حاسبة درجات برنامج اللغة الإنجليزية المكثف
+ </title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <div class="header1">
+  <img src="https://i.ibb.co/p3LqzzK/image.jpg" alt="وصف لصورة الشعار" class="logo">
+</div>
+
+<script>
+  var link = document.querySelector(".link-container a");
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.open(link.href, "_blank");
+  });
+
+
+
+</script>
+ <style>
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0px;
+
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 5px;
+  box-sizing: border-box;
+  flex-basis: calc(33.33% - 0px);
+}
+
+.link-container a {
+  display: flex;
+  align-items: center;
+  justify-content: right; /* توسيط النص والصورة */
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 2px;
+  border: 1px solid #88000000;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  flex-basis: 100%;
+}
+
+.link-container a:hover {
+  background-color: #00ff5e7a;
+  border-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.link-container a img {
+  margin-right: 10px;
+  margin-left: 10px; /* وضع مسافة بين الصورة والنص */
+  border-radius: 50%;
+}
+
+.link-container a span {
+  font-weight: bold;
+}
+
+
+footer {
+    background-color: #333;
+    padding: 7px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  footer a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   background-image: url("Eng.jpg");
+
+
+
+   #main {
+    margin: 0 auto;
+    text-align: center;
+
+
+    form {
+      display: flex;
+      flex-wrap: wrap; justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+ }
+  }
+
+  header {
+    max-width: 600px;
+    background-color: #464646;
+   color: #ffffff;
+   border: 5px solid #000000;
+   text-align: center;
+   padding: 20px;
+   margin-top: 60px;
+   margin: 60px auto 2px;
+   text-align: center;
+   padding: 20px;
+
+  }
+
+  h1 {
+   margin: 0;
+  }
+
+h2 {
+  color: rgb(17, 15, 131);
+  font-size: 30px;
+  margin-top: 8%;
+}
+  main {
+   max-width: 600px;
+    text-align: center;
+   margin: 20px auto;
+   padding: 20px;
+   border: 5px solid #000000;
+   background-color: rgba(255, 255, 255, 0.863);
+   
+
+  }
+  label {
+   display: block;
+   margin-bottom: 10px;
+
+   font-size: 15px;
+
+color: #000000fd;
+   font-weight: bold;
+   width: 100%;
+
+  }
+  input[type="number"] {
+
+   width: 60px;
+
+   margin: 0 20px 5px;
+   margin-bottom: 3%;
+
+  }
+  button {
+   display: block;
+   background-color: #333;
+   color: #fff;
+   border: none;
+   padding: 10px;
+   margin: 20px auto 0;
+   margin-bottom: 2%;
+   margin-top: 2%;
+
+
+  }
+  button:hover {
+   cursor: pointer;
+   background-color: #246909c9;
+  }
+
+  div { text-align: center;}
+
+  #result {
+   font-size: 24px;
+   font-weight: bold;
+   margin-top: 20px;
+  }
+
+  #result1 {
+    color: rgb(153, 0, 0);
+    font-weight: bold;
+  }   #result2 {
+    color: rgb(153, 0, 0);
+    font-weight: bold;
+  }   #result3 {
+    color: rgb(153, 0, 0);
+    font-weight: bold;
+  }   #result4 {
+    color: rgb(153, 0, 0);
+    font-weight: bold;
+  }   #result5 {
+    color: rgb(153, 0, 0);
+    font-weight: bold;
+  }   #result6 {
+    color: rgb(153, 0, 0);
+    font-weight: bold;
+  }   #result7 {
+    color: rgb(153, 0, 0);
+    font-weight: bold;
+  }
+
+  .header1 {
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+  text-align: center;
+}
+
+.logo {
+  height: 75%;
+  margin-top: 25px;
+  background-color: #333;
+}
+
+  
+ </style>
+</head>
+<body>
+
+   <div>
+    <div class="flex-container">
+   <div class="link-container">
+    <a href="https://drive.google.com/file/d/1-TpwGTzxNgw9P5EqH1Xyo1Nt4GbOudmE/view?usp=sharing" target="_blank">
+      <span>قنوات الحلول</span>
+      <img src="icons8-telegram.svg" alt="وصف الصورة" width="20" height="20" />
+  
+    </a>
+  </div>
+    
+    
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1ugL4PbUGll08QvAyZqBA23DF_noKRbHw/view?usp=sharing" target="_blank">
+        <span>قروب المستويات</span>
+        <img src="icons8-telegram.svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+    
+    <div class="link-container">
+      <a href="https://t.me/english_gru" target="_blank">
+        <span>القروب الرئيسي</span>
+        <img src="icons8-telegram.svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1g5X9DjKzqwF8SkqUyh67YWTohqhjxpwi/view?usp=sharing" target="_blank">
+        <span>طريقة التقديم</span>
+        <img src="free_icon_1 (16).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1PKHTKtwQ8U5ZHjGSJdUyqaZP-HBqz8fp/view?usp=sharing" target="_blank">
+        <span> الدعم الفني</span>
+        <img src="free_icon_1 (11).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://t.me/IEPVBOT" target="_blank">
+        <span>الدليل المساعد</span>
+        <img src="free_icon_1 (10).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1yEj0SychbMLD_CqEDSQ8ByF6k1wnMYQq/view?usp=sharing" target="_blank">
+        <span>خطة البرنامج</span>
+        <img src="free_icon_1 (13).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1V2crP9xlDmjENeZU-lzV5FrPV1gX5Zim/view?usp=sharing" target="_blank">
+        <span>منصة البرنامج</span>
+        <img src="free_icon_1 (14).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1N7Npl8-efs5Jky8cGtX44XjUQXFfiwO6/view?usp=sharing" target="_blank">
+        <span>شرح البرنامج</span>
+        <img src="free_icon_1 (17).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1uRkz9QVqV9AQ02PnxxI0rQlvYT2jrFoP/view?usp=sharing" target="_blank">
+        <span>أهم المرفقات</span>
+        <img src="free_icon_1 (2).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1xsnbHinFGHMMXiOZByNOTqZjnGTW3k-e/view?usp=sharing" target="_blank">
+        <span>المنصات والمواقع</span>
+        <img src="free_icon_1 (8).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+    </div>
+  
+    <div class="link-container">
+      <a href="https://drive.google.com/file/d/1LXRuqHw2Qz0inToo_58GVnOdZ-cvkFuD/view?usp=sharing" target="_blank">
+        <span>كتب البرنامج</span>
+        <img src="free_icon_1 (9).svg" alt="وصف الصورة" width="20" height="20" />
+      </a>
+      </div>
+  
+      <div class="link-container">
+        <a href="https://drive.google.com/file/d/1mf_rjw3fb7d3lUT9i8B46LS5JJsY1VxD/view?usp=sharing" target="_blank">
+          <span>شهادة البرنامج</span>
+          <img src="free_icon_1 (12).svg" alt="وصف الصورة" width="20" height="20" />
+        </a>
+        </div>
+  
+        <div class="link-container">
+          <a href="https://drive.google.com/file/d/1P9EVUHaxdeQy4GKQms4AufNx6T6_aXnG/view?usp=sharing" target="_blank">
+            <span>المشهد الدراسي</span>
+            <img src="free_icon_1 (12).svg" alt="وصف الصورة" width="20" height="20" />
+          </a>
+        </div>
+  
+          <div class="link-container">
+            <a href="https://drive.google.com/file/d/1TixdaQWOYQolnX6rPwYCMGrVGtJhGteK/view?usp=sharing" target="_blank">
+              <span>إضافة الآيبان</span>
+              <img src="free_icon_1 (6).svg" alt="وصف الصورة" width="20" height="20" />
+            </a>
+          </div>
+  
+    </div>
+    </div>
+
+ <header>
+  <h1>حاسبة درجات برنامج اللغة الإنجليزية المكثف</h1>
+ </header>
+ <main>
+  <form>
+   <h2>اختبارات التحدث (10%)</h2>
+   <label for="test1">الاختبار الأول (من 10 درجات)</label>
+   <input type="number" id="test1" name="test1" min="0" max="10" required>
+   <label for="test2">الاختبار الثاني (من 10 درجات)</label>
+   <input type="number" id="test2" name="test2" min="0" max="10" required>
+   <label for="test3">الاختبار الثالث (من 10 درجات)</label>
+   <input type="number" id="test3" name="test3" min="0" max="10" required>
+   <label for="test4">الاختبار الرابع (من 10 درجات)</label>
+   <input type="number" id="test4" name="test4" min="0" max="10" required>
+   <label for="test5">الاختبار الخامس (من 10 درجات)</label>
+   <input type="number" id="test5" name="test5" min="0" max="10" required>
+   <label for="test6">الاختبار السادس (من 10 درجات)</label>
+   <input type="number" id="test6" name="test6" min="0" max="10" required>
+   <button type="button" onclick="calculateSpeaking()">أحسب</button>
+   <div id="result1"></div>
+  </form>
+  <form>
+   <h2>مشاريع التحدث (30%)</h2>
+   <label for="test7">المشروع الأول (من 20 درجة)</label>
+   <input type="number" id="test7" name="test7" min="0" max="20" required>
+   <label for="test8">المشروع الثاني (من 20 درجة)</label>
+   <input type="number" id="test8" name="test8" min="0" max="20" required>
+   <label for="test9">المشروع الثالث (من 20 درجة)</label>
+   <input type="number" id="test9" name="test9" min="0" max="20" required>
+   <label for="test10">المشروع الرابع (من 20 درجة)</label>
+   <input type="number" id="test10" name="test10" min="0" max="20" required>
+   <label for="test11">المشروع الخامس (من 20 درجة)</label>
+   <input type="number" id="test11" name="test11" min="0" max="20" required>
+   <label for="test12">المشروع السادس (من 20 درجة)</label>
+   <input type="number" id="test12" name="test12" min="0" max="20" required>
+   <button type="button" onclick="calculateProjects()">أحسب</button>
+   <div id="result2"></div>
+  </form>
+
+  <form>
+    <h2>الأختبار النصفي (10%)</h2>
+    <label for="test13">الأختبار النصفي (من 30 درجة)</label>
+    <input type="number" id="test13" name="test13" min="0" max="30" required>
+    <button type="button" onclick="calculateMidTerm()">أحسب</button>
+    <div id="result3"></div>
+   </form>
+
+   <form>
+    <h2>الأختبار النهائي (10%)</h2>
+    <label for="test14">الأختبار النهائي (من 30 درجة)</label>
+    <input type="number" id="test14" name="test14" min="0" max="30" required>
+    <button type="button" onclick="calculateFinal()">أحسب</button>
+    <div id="result4"></div>
+   </form>
+
+   <form>
+    <h2>تمارين سمارت كلاس (25%)</h2>
+    <label for="test15">تمارين سمارت كلاس - المستوى الأول (من 10 درجات)</label>
+    <input type="number" id="test15" name="test15" min="0" max="10" required>
+    <label for="test16">تمارين سمارت كلاس - المستوى الثاني (من 10 درجات)</label>
+    <input type="number" id="test16" name="test16" min="0" max="10" required>
+    <button type="button" onclick="calculateSmartClass()">أحسب</button>
+    <div id="result5"></div>
+   </form>
+
+   <form>
+    <h2>المشاركة/الحضور/المواظبة (15%)</h2>
+    <label for="test17">المشاركة/الحضور/المواظبة - المستوى الأول (من 15 درجة)</label>
+    <input type="number" id="test17" name="test17" min="0" max="15" required>
+    <label for="test18">المشاركة/الحضور/المواظبة -  المستوى الثاني (من 15 درجة)</label>
+    <input type="number" id="test18" name="test18" min="0" max="15" required>
+    <button type="button" onclick="calculateAttParDis()">أحسب</button>
+    <div id="result6"></div>
+   </form>
+
+   <form>
+    <button type="button" onclick="calculateTotalResults()">حساب مجموع النتائج</button>
+   <div id="totalResults"></div>
+  </form>
+
+
+ </main>
+ <script>
+function calculateSpeaking() {
+  var test1 = parseFloat(document.getElementById("test1").value);
+  var test2 = parseFloat(document.getElementById("test2").value);
+  var test3 = parseFloat(document.getElementById("test3").value);
+  var test4 = parseFloat(document.getElementById("test4").value);
+  var test5 = parseFloat(document.getElementById("test5").value);
+  var test6 = parseFloat(document.getElementById("test6").value);
+
+  // Check if input value is greater than 10
+  if (test1 > 10) {
+    alert("درجة أختبار التحدث الأول تجاوزت الحد الأقصى للدرجة");
+    test1 = NaN;
+  }
+  if (test2 > 10) {
+    alert("درجة أختبار التحدث الثاني تجاوزت الحد الأقصى للدرجة");
+    test2 = NaN;
+  }
+  if (test3 > 10) {
+    alert("درجة أختبار التحدث الثالث تجاوزت الحد الأقصى للدرجة");
+    test3 = NaN;
+  }
+  if (test4 > 10) {
+    alert("درجة أختبار التحدث الرابع تجاوزت الحد الأقصى للدرجة");
+    test4 = NaN;
+  }
+  if (test5 > 10) {
+    alert("درجة أختبار التحدث الخامس تجاوزت الحد الأقصى للدرجة");
+    test5 = NaN;
+  }
+  if (test6 > 10) {
+    alert("درجة أختبار التحدث السادس تجاوزت الحد الأقصى للدرجة");
+    test6 = NaN;
+  }
+
+  // Calculate the total score
+  var total = test1 + test2 + test3 + test4 + test5 + test6;
+
+  // Check if total score is greater than 60
+  if (total > 60) {
+    alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+    total = NaN;
+  }
+
+  // Calculate the percentage and display the result
+  var percentage = (total / 60) * 10;
+var percentageString = percentage.toFixed(2); // تحويل النتيجة إلى نص وتحديد عدد الأرقام العشرية المطلوبة
+document.getElementById("result1").innerHTML = "الدرجة الكلية (أختبارات التحدث): " + percentageString + "/10.00"; // عرض النتيجة كنص
+}
+
+
+  function calculateProjects() {
+    var test7 = parseFloat(document.getElementById("test7").value);
+    var test8 = parseFloat(document.getElementById("test8").value);
+    var test9 = parseFloat(document.getElementById("test9").value);
+    var test10 = parseFloat(document.getElementById("test10").value);
+    var test11 = parseFloat(document.getElementById("test11").value);
+    var test12 = parseFloat(document.getElementById("test12").value);
+
+    // Check if input value is greater than 20
+    if (test7 > 20) {
+      alert("درجة المشروع الأول تجاوزت الحد الأقصى للدرجة");
+      test7 = NaN;
+    }
+    if (test8 > 20) {
+      alert("درجة المشروع الثاني تجاوزت الحد الأقصى للدرجة");
+      test8 = NaN;
+    }
+    if (test9 > 20) {
+      alert("درجة المشروع الثالث تجاوزت الحد الأقصى للدرجة");
+      test9 = NaN;
+    }
+    if (test10 > 20) {
+      alert("درجة المشروع الرابع تجاوزت الحد الأقصى للدرجة");
+      test10 = NaN;
+    }
+    if (test11 > 20) {
+      alert("درجة المشروع الخامس تجاوزت الحد الأقصى للدرجة");
+      test11 = NaN;
+    }
+    if (test12 > 20) {
+      alert("درجة المشروع السادس تجاوزت الحد الأقصى للدرجة");
+      test12 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test7 + test8 + test9 + test10 + test11 + test12;
+
+    // Check if total score is greater than 120
+    if (total > 120) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 120) * 30;
+    document.getElementById("result2").innerHTML = "الدرجة الكلية (مشاريع التحدث): " + percentage.toFixed(2) + "/30.00";
+  }
+
+
+  function calculateMidTerm() {
+    var test13 = parseFloat(document.getElementById("test13").value);
+
+    // Check if input value is greater than 30
+    if (test13 > 30) {
+      alert("درجة أختبار النصفي تجاوزت الحد الأقصى للدرجة");
+      test13 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test13 ;
+
+    // Check if total score is greater than 30
+    if (total > 30) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 30) * 10;
+    document.getElementById("result3").innerHTML = "الدرجة الكلية (أختبار النصفي): " + percentage.toFixed(2) + "/10.00";
+  }
+
+  function calculateFinal() {
+    var test14 = parseFloat(document.getElementById("test14").value);
+
+    // Check if input value is greater than 30
+    if (test14 > 30) {
+      alert("درجة أختبار النهائي تجاوزت الحد الأقصى للدرجة");
+      test14 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test14 ;
+
+    // Check if total score is greater than 30
+    if (total > 30) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 30) * 10;
+    document.getElementById("result4").innerHTML = "الدرجة الكلية (أختبار النهائي): " + percentage.toFixed(2) + "/10.00";
+  }
+
+  function calculateSmartClass() {
+   var test15 = parseFloat(document.getElementById("test15").value);
+   var test16 = parseFloat(document.getElementById("test16").value);
+
+    // Check if input value is greater than 10
+    if (test15 > 10) {
+      alert("درجة تمارين سمارت كلاس - المستوى الأول تجاوزت الحد الأقصى للدرجة");
+      test15 = NaN;
+    }
+    if (test16 > 10) {
+      alert("درجة تمارين سمارت كلاس - المستوى الثاني تجاوزت الحد الأقصى للدرجة");
+      test16 = NaN;
+    }
+    
+
+    // Calculate the total score
+    var total = test15 + test16 ;
+
+    // Check if total score is greater than 800
+    if (total > 20) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 20) * 25;
+    document.getElementById("result5").innerHTML = "الدرجة الكلية (سمارت كلاس): " + percentage.toFixed(2) + "/25.00";
+  }
+
+
+  function calculateAttParDis() {
+   var test17 = parseFloat(document.getElementById("test17").value);
+   var test18 = parseFloat(document.getElementById("test18").value);
+
+    // Check if input value is greater than 15
+    if (test17 > 15) {
+      alert("درجة (المشاركة/الحضور/المواظبة - المستوى الأول) تجاوزت الحد الأقصى للدرجة");
+      test17 = NaN;
+    }
+    if (test18 > 15) {
+      alert("درجة (المشاركة/الحضور/المواظبة - المستوى الثاني) تجاوزت الحد الأقصى للدرجة");
+      test18 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test17 + test18 ;
+
+    // Check if total score is greater than 15
+    if (total > 30) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 30) * 15;
+    document.getElementById("result6").innerHTML = "الدرجة الكلية (المشاركة/الحضور/المواظبة): " + percentage.toFixed(2) + "/15.00";
+  }
+
+  function calculateTotalResults() {
+    var resultElements = ["result1", "result2", "result3", "result4", "result5", "result6"];
+    var totalResults = 0;
+
+    for (var i = 0; i < resultElements.length; i++) {
+        var resultValue = parseFloat(document.getElementById(resultElements[i]).textContent);
+        totalResults += resultValue;
+    }
+
+    document.getElementById("totalResults").innerHTML = "مجموع النتائج: " + totalResults.toFixed(2);
+}
+
+
+
+ </script>
+
+<footer>
+  <p>جميع الحقوق محفوظة
+  </p>
+  <p>&copy; 2023 مجموعة برنامج اللغة الإنجليزية المكثف</p>
+</footer>
+
+</body>
+</html>
