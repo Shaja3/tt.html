@@ -636,77 +636,7 @@ document.getElementById("result1").innerHTML = "الدرجة الكلية (أخ�
     document.getElementById("result6").innerHTML = "الدرجة الكلية (المشاركة/الحضور/المواظبة): " + percentage.toFixed(2) + "/15.00";
   }
 
-  function calculateTotal() {
-   var test19 = parseFloat(document.getElementById("test19").value);
-   var test20 = parseFloat(document.getElementById("test20").value);
-   var test21 = parseFloat(document.getElementById("test21").value);
-   var test22 = parseFloat(document.getElementById("test22").value);
-   var test23 = parseFloat(document.getElementById("test23").value);
-   var test24 = parseFloat(document.getElementById("test24").value);
-   
-    // Check if input value is greater than ...
-    if (test19 > 10) {
-      alert("درجة أختبارات التحدث تجاوزت الحد الأقصى للدرجة");
-      test19 = NaN;
-    }
-    if (test20 > 30) {
-      alert("درجة مشاريع التحدث تجاوزت الحد الأقصى للدرجة");
-      test20 = NaN;
-    }
-    if (test21 > 10) {
-      alert("درجة أختبار النصفي تجاوزت الحد الأقصى للدرجة");
-      test21 = NaN;
-    }
-    if (test22 > 10) {
-      alert("درجة أختبار النهائي تجاوزت الحد الأقصى للدرجة");
-      test22 = NaN;
-    }
-    if (test23 > 25) {
-      alert("درجة تمارين سمارت كلاس تجاوزت الحد الأقصى للدرجة");
-      test23 = NaN;
-    }
-    if (test24 > 15) {
-      alert("درجة المشاركة/الحضور/المواظبة تجاوزت الحد الأقصى للدرجة");
-      test24 = NaN;
-    }
 
-    // Calculate the total score
-    var total = test19 + test20 + test21 + test22 + test23 + test24;
-
-    // Check if total score is greater than 100
-    if (total > 100) {
-      alert("الدرجة النهائية بالبرنامج تجاوزت الحد الأقصى المسموح به");
-      total = NaN;
-    }
-
-    // Calculate the percentage and display the result
-    var percentage = (total / 100) * 100;
-    document.getElementById("result7").innerHTML = "الدرجة النهائية بالبرنامج: " + percentage.toFixed(2) + "/100.00";
-}
-
-  function calculateTotal() {
-        // حساب النقاط الإجمالية وعرض النتيجة
-        calculateSpeaking();
-        calculateProjects();
-        calculateMidTerm();
-        calculateFinal();
-        calculateSmartClass();
-        calculateAttParDis();
-
-        var result1Value = parseFloat(document.getElementById("result1").innerText.split("/")[0].trim());
-        var result2Value = parseFloat(document.getElementById("result2").innerText.split("/")[0].trim());
-        var result3Value = parseFloat(document.getElementById("result3").innerText.split("/")[0].trim());
-        var result4Value = parseFloat(document.getElementById("result4").innerText.split("/")[0].trim());
-        var result5Value = parseFloat(document.getElementById("result5").innerText.split("/")[0].trim());
-        var result6Value = parseFloat(document.getElementById("result6").innerText.split("/")[0].trim());
-
-
-        // Calculate the total score
-        var total = result1Value + result2Value + result3Value + result4Value + result5Value + result6Value;
-
-        // Update the result7 element with the total score
-        document.getElementById("result7").innerHTML = "الدرجة الكلية: " + total.toFixed(2);
-    }
 
  </script>
 
