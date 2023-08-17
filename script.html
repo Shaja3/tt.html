@@ -1,0 +1,295 @@
+ <script>
+
+var result7 = document.getElementById("result7");
+  var result1 = document.getElementById("result1");
+  var result2 = document.getElementById("result2");
+  var result3 = document.getElementById("result3");
+  var result4 = document.getElementById("result4");
+  var result5 = document.getElementById("result5");
+  var result6 = document.getElementById("result6");
+  
+  var test19 = document.getElementById("test19");
+  var test20 = document.getElementById("test20");
+  var test21 = document.getElementById("test21");
+  var test22 = document.getElementById("test22");
+  var test23 = document.getElementById("test23");
+  var test24 = document.getElementById("test24");
+
+   // قم بتعديل القيمة النهائية في result7
+   var finalValue = "قيمة نهائية";
+  result7.textContent = finalValue;
+
+  // قم بنسخ قيمة result7 إلى test19 ومنع التعديل عليها
+  test19.value = result7.textContent;
+  test19.setAttribute("readonly", true);
+
+  // قم بتكرار الخطوات السابقة للأرقام الأخرى
+  test20.value = result2.textContent;
+  test20.setAttribute("readonly", true);
+
+  test21.value = result3.textContent;
+  test21.setAttribute("readonly", true);
+
+  test22.value = result4.textContent;
+  test22.setAttribute("readonly", true);
+
+  test23.value = result5.textContent;
+  test23.setAttribute("readonly", true);
+
+  test24.value = result6.textContent;
+  test24.setAttribute("readonly", true);
+
+  
+function calculateSpeaking() {
+  var test1 = parseFloat(document.getElementById("test1").value);
+  var test2 = parseFloat(document.getElementById("test2").value);
+  var test3 = parseFloat(document.getElementById("test3").value);
+  var test4 = parseFloat(document.getElementById("test4").value);
+  var test5 = parseFloat(document.getElementById("test5").value);
+  var test6 = parseFloat(document.getElementById("test6").value);
+
+  // Check if input value is greater than 10
+  if (test1 > 10) {
+    alert("درجة أختبار التحدث الأول تجاوزت الحد الأقصى للدرجة");
+    test1 = NaN;
+  }
+  if (test2 > 10) {
+    alert("درجة أختبار التحدث الثاني تجاوزت الحد الأقصى للدرجة");
+    test2 = NaN;
+  }
+  if (test3 > 10) {
+    alert("درجة أختبار التحدث الثالث تجاوزت الحد الأقصى للدرجة");
+    test3 = NaN;
+  }
+  if (test4 > 10) {
+    alert("درجة أختبار التحدث الرابع تجاوزت الحد الأقصى للدرجة");
+    test4 = NaN;
+  }
+  if (test5 > 10) {
+    alert("درجة أختبار التحدث الخامس تجاوزت الحد الأقصى للدرجة");
+    test5 = NaN;
+  }
+  if (test6 > 10) {
+    alert("درجة أختبار التحدث السادس تجاوزت الحد الأقصى للدرجة");
+    test6 = NaN;
+  }
+
+  // Calculate the total score
+  var total = test1 + test2 + test3 + test4 + test5 + test6;
+
+  // Check if total score is greater than 60
+  if (total > 60) {
+    alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+    total = NaN;
+  }
+
+  // Calculate the percentage and display the result
+  var percentage = (total / 60) * 10;
+var percentageString = percentage.toFixed(2); // تحويل النتيجة إلى نص وتحديد عدد الأرقام العشرية المطلوبة
+document.getElementById("result1").innerHTML = "الدرجة الكلية (أختبارات التحدث): " + percentageString + "/10.00"; // عرض النتيجة كنص
+}
+
+
+  function calculateProjects() {
+    var test7 = parseFloat(document.getElementById("test7").value);
+    var test8 = parseFloat(document.getElementById("test8").value);
+    var test9 = parseFloat(document.getElementById("test9").value);
+    var test10 = parseFloat(document.getElementById("test10").value);
+    var test11 = parseFloat(document.getElementById("test11").value);
+    var test12 = parseFloat(document.getElementById("test12").value);
+
+    // Check if input value is greater than 20
+    if (test7 > 20) {
+      alert("درجة المشروع الأول تجاوزت الحد الأقصى للدرجة");
+      test7 = NaN;
+    }
+    if (test8 > 20) {
+      alert("درجة المشروع الثاني تجاوزت الحد الأقصى للدرجة");
+      test8 = NaN;
+    }
+    if (test9 > 20) {
+      alert("درجة المشروع الثالث تجاوزت الحد الأقصى للدرجة");
+      test9 = NaN;
+    }
+    if (test10 > 20) {
+      alert("درجة المشروع الرابع تجاوزت الحد الأقصى للدرجة");
+      test10 = NaN;
+    }
+    if (test11 > 20) {
+      alert("درجة المشروع الخامس تجاوزت الحد الأقصى للدرجة");
+      test11 = NaN;
+    }
+    if (test12 > 20) {
+      alert("درجة المشروع السادس تجاوزت الحد الأقصى للدرجة");
+      test12 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test7 + test8 + test9 + test10 + test11 + test12;
+
+    // Check if total score is greater than 120
+    if (total > 120) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 120) * 30;
+    document.getElementById("result2").innerHTML = "الدرجة الكلية (مشاريع التحدث): " + percentage.toFixed(2) + "/30.00";
+  }
+
+
+  function calculateMidTerm() {
+    var test13 = parseFloat(document.getElementById("test13").value);
+
+    // Check if input value is greater than 30
+    if (test13 > 30) {
+      alert("درجة أختبار النصفي تجاوزت الحد الأقصى للدرجة");
+      test13 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test13 ;
+
+    // Check if total score is greater than 30
+    if (total > 30) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 30) * 10;
+    document.getElementById("result3").innerHTML = "الدرجة الكلية (أختبار النصفي): " + percentage.toFixed(2) + "/10.00";
+  }
+
+  function calculateFinal() {
+    var test14 = parseFloat(document.getElementById("test14").value);
+
+    // Check if input value is greater than 30
+    if (test14 > 30) {
+      alert("درجة أختبار النهائي تجاوزت الحد الأقصى للدرجة");
+      test14 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test14 ;
+
+    // Check if total score is greater than 30
+    if (total > 30) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 30) * 10;
+    document.getElementById("result4").innerHTML = "الدرجة الكلية (أختبار النهائي): " + percentage.toFixed(2) + "/10.00";
+  }
+
+  function calculateSmartClass() {
+   var test15 = parseFloat(document.getElementById("test15").value);
+   var test16 = parseFloat(document.getElementById("test16").value);
+
+    // Check if input value is greater than 10
+    if (test15 > 10) {
+      alert("درجة تمارين سمارت كلاس - المستوى الأول تجاوزت الحد الأقصى للدرجة");
+      test15 = NaN;
+    }
+    if (test16 > 10) {
+      alert("درجة تمارين سمارت كلاس - المستوى الثاني تجاوزت الحد الأقصى للدرجة");
+      test16 = NaN;
+    }
+    
+
+    // Calculate the total score
+    var total = test15 + test16 ;
+
+    // Check if total score is greater than 800
+    if (total > 20) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 20) * 25;
+    document.getElementById("result5").innerHTML = "الدرجة الكلية (سمارت كلاس): " + percentage.toFixed(2) + "/25.00";
+  }
+
+
+  function calculateAttParDis() {
+   var test17 = parseFloat(document.getElementById("test17").value);
+   var test18 = parseFloat(document.getElementById("test18").value);
+
+    // Check if input value is greater than 15
+    if (test17 > 15) {
+      alert("درجة (المشاركة/الحضور/المواظبة - المستوى الأول) تجاوزت الحد الأقصى للدرجة");
+      test17 = NaN;
+    }
+    if (test18 > 15) {
+      alert("درجة (المشاركة/الحضور/المواظبة - المستوى الثاني) تجاوزت الحد الأقصى للدرجة");
+      test18 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test17 + test18 ;
+
+    // Check if total score is greater than 15
+    if (total > 30) {
+      alert("الدرجة الكلية تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 30) * 15;
+    document.getElementById("result6").innerHTML = "الدرجة الكلية (المشاركة/الحضور/المواظبة): " + percentage.toFixed(2) + "/15.00";
+  }
+
+  function calculateTotal() {
+   var test19 = parseFloat(document.getElementById("test19").value);
+   var test20 = parseFloat(document.getElementById("test20").value);
+   var test21 = parseFloat(document.getElementById("test21").value);
+   var test22 = parseFloat(document.getElementById("test22").value);
+   var test23 = parseFloat(document.getElementById("test23").value);
+   var test24 = parseFloat(document.getElementById("test24").value);
+   
+    // Check if input value is greater than ...
+    if (test19 > 10) {
+      alert("درجة أختبارات التحدث تجاوزت الحد الأقصى للدرجة");
+      test19 = NaN;
+    }
+    if (test20 > 30) {
+      alert("درجة مشاريع التحدث تجاوزت الحد الأقصى للدرجة");
+      test20 = NaN;
+    }
+    if (test21 > 10) {
+      alert("درجة أختبار النصفي تجاوزت الحد الأقصى للدرجة");
+      test21 = NaN;
+    }
+    if (test22 > 10) {
+      alert("درجة أختبار النهائي تجاوزت الحد الأقصى للدرجة");
+      test22 = NaN;
+    }
+    if (test23 > 25) {
+      alert("درجة تمارين سمارت كلاس تجاوزت الحد الأقصى للدرجة");
+      test23 = NaN;
+    }
+    if (test24 > 15) {
+      alert("درجة المشاركة/الحضور/المواظبة تجاوزت الحد الأقصى للدرجة");
+      test24 = NaN;
+    }
+
+    // Calculate the total score
+    var total = test19 + test20 + test21 + test22 + test23 + test24;
+
+    // Check if total score is greater than 100
+    if (total > 100) {
+      alert("الدرجة النهائية بالبرنامج تجاوزت الحد الأقصى المسموح به");
+      total = NaN;
+    }
+
+    // Calculate the percentage and display the result
+    var percentage = (total / 100) * 100;
+    document.getElementById("result7").innerHTML = "الدرجة النهائية بالبرنامج: " + percentage.toFixed(2) + "/100.00";
+}
+
+
+ </script>
